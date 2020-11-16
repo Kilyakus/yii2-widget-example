@@ -1,5 +1,5 @@
 <?php
-namespace kilyakus\button;
+namespace kilyakus\widget\example;
 
 class ExampleAsset extends \kilyakus\widgets\AssetBundle
 {
