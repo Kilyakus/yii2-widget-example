@@ -1,0 +1,46 @@
+.example .example-tools {display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+
+.example .example-toggle,
+.example .example-copy {height:34px;width:34px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-left:0.25rem;-webkit-transition:all 0.15s ease;transition:all 0.15s ease;cursor:pointer;font-size:1.15rem;color:#B5B5C3;}
+	.example .example-toggle:hover,
+	.example .example-copy:hover {-webkit-transition:all 0.15s ease;transition:all 0.15s ease;color:#8950FC;}
+
+.example .example-toggle {font-size:1.35rem;}
+	.example .example-toggle:after {font-family:Ki;font-style:normal;font-weight:normal;font-variant:normal;line-height:1;text-decoration:inherit;text-rendering:optimizeLegibility;text-transform:none;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;content:"";}
+	.example .example-toggle.example-toggled {background-color:#F3F6F9;-webkit-transition:all 0.15s ease;transition:all 0.15s ease;color:#8950FC;border-top-left-radius:0.42rem;border-top-right-radius:0.42rem;}
+		.example .example-toggle.example-toggled:after {content:"";}
+
+.example .card-toolbar .example-toggle {border-radius:0.42rem;}
+
+.example .example-copy:after {font-family:Ki;font-style:normal;font-weight:normal;font-variant:normal;line-height:1;text-decoration:inherit;text-rendering:optimizeLegibility;text-transform:none;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;content:"";}
+
+.example .example-copy.example-copied {-webkit-transition:all 0.15s ease;transition:all 0.15s ease;color:#8950FC;}
+	.example .example-copy.example-copied:after {content:"";}
+
+.example .example-preview {border:4px solid #F3F6F9;padding:1.75rem 1.5rem;border-top-left-radius:0.42rem;border-top-right-radius:0.42rem;}
+
+.example .example-nav.nav {padding:0 1.5rem;}
+	.example .example-nav.nav .nav-item {margin:0;margin-right:1rem;}
+	.example .example-nav.nav .nav-link {padding:1rem 0;}
+
+.example .example-code {padding:0;position:relative;background-color:#F3F6F9;border-radius:0.42rem;}
+	.example .example-code .example-copy {position:absolute;top:0.25rem;right:0.75rem;}
+		.example .example-code .example-copy:hover {color:#8950FC;-webkit-transition:color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;transition:color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, -webkit-box-shadow 0.15s ease;transition:color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;transition:color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, -webkit-box-shadow 0.15s ease;}
+	.example .example-code .example-highlight {padding:1.75rem 1.5rem;}
+	.example .example-code .tab-pane .example-highlight {padding:1.75rem 1.5rem;}
+	.example .example-code .example-nav + .example-copy {top:0.25rem;}
+	.example .example-code pre[class*="language-"] {margin:0;overflow:auto;padding:0;background-color:#F3F6F9;border-radius:0.42rem;font-size:1rem;}
+		.example .example-code pre[class*="language-"] code {padding:0;margin:0;}
+			.example .example-code pre[class*="language-"] code .token.operator {background:none;}
+
+.example .example-preview + .example-code {border-top-left-radius:0;border-top-right-radius:0;}
+	.example .example-preview + .example-code .example-copy {top:0rem;height:25px;}
+	.example .example-preview + .example-code pre[class*="language-"] {border-top-left-radius:0;border-top-right-radius:0;}
+
+.example.example-compact {position:relative;}
+	.example.example-compact .example-toggle.example-toggled {background-color:#F3F6F9;}
+	.example.example-compact .example-code {background-color:#F3F6F9;border-radius:0.42rem;}
+		.example.example-compact .example-code pre[class*="language-"] {background-color:#F3F6F9;}
+		.example.example-compact .example-code:not(.example-code-on) {position:absolute;left:-1000rem;top:-1000rem;opacity:0;}
+		.example.example-compact .example-code.example-code-on {display:none;}
+	.example.example-compact .example-preview + .example-code {border-top-left-radius:0;border-top-right-radius:0;}
